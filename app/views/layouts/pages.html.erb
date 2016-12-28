@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <meta content="pt_BR" property="og:locale">
+  <meta content="website" property="og:type">
+
+  <title>Home.ORG</title>
+
+  <meta content="<%= request.original_url %>" property="og:url">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= yield %>
+
+</body>
+</html>
