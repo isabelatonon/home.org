@@ -13,10 +13,14 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'pages' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
+  <%= render "shared/menu" %>
+  <div class="main-content container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
